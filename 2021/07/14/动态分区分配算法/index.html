@@ -20,19 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="This is a test.">
+  <meta name="description" content="动态分区分配算法有四种:首次适应算法,最佳适应算法,最坏适应算法,邻近适应算法.综合来看,首次适应算法的效果反而更好.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/11/21/hello-world/index.html">
+<meta property="og:title" content="动态分区分配算法">
+<meta property="og:url" content="http://example.com/2021/07/14/%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="muCyaKuCya">
-<meta property="og:description" content="This is a test.">
+<meta property="og:description" content="动态分区分配算法有四种:首次适应算法,最佳适应算法,最坏适应算法,邻近适应算法.综合来看,首次适应算法的效果反而更好.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-21T03:35:56.813Z">
-<meta property="article:modified_time" content="2020-11-21T08:18:00.889Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/muCyaKuCya/image/main/20210714173208.jpg">
+<meta property="article:published_time" content="2021-07-14T08:52:08.000Z">
+<meta property="article:modified_time" content="2021-07-14T09:34:11.709Z">
 <meta property="article:author" content="muCyaKuCya">
+<meta property="article:tag" content="操作系统-考研复习笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/muCyaKuCya/image/main/20210714173208.jpg">
 
-<link rel="canonical" href="http://example.com/2020/11/21/hello-world/">
+<link rel="canonical" href="http://example.com/2021/07/14/%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -45,7 +48,7 @@
   };
 </script>
 
-  <title>Hello World | muCyaKuCya</title>
+  <title>动态分区分配算法 | muCyaKuCya</title>
   
 
 
@@ -150,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/21/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/14/%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          动态分区分配算法
         </h1>
 
         <div class="post-meta">
@@ -174,11 +177,11 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-11-21 11:35:56 / Modified: 16:18:00" itemprop="dateCreated datePublished" datetime="2020-11-21T11:35:56+08:00">2020-11-21</time>
+              <time title="Created: 2021-07-14 16:52:08 / Modified: 17:34:11" itemprop="dateCreated datePublished" datetime="2021-07-14T16:52:08+08:00">2021-07-14</time>
             </span>
 
           
-            <div class="post-description">This is a test.</div>
+            <div class="post-description">动态分区分配算法有四种:首次适应算法,最佳适应算法,最坏适应算法,邻近适应算法.综合来看,首次适应算法的效果反而更好.</div>
 
         </div>
       </header>
@@ -189,19 +192,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="动态分区分配算法"><a href="#动态分区分配算法" class="headerlink" title="动态分区分配算法"></a>动态分区分配算法</h1><ul>
+<li>首次适应算法(First Fit)</li>
+<li>最佳适应算法(Best Fit)</li>
+<li>最坏适应算法(Worst Fit)</li>
+<li>邻近适应算法(Next Fit)</li>
+</ul>
+<h2 id="首次适应算法"><a href="#首次适应算法" class="headerlink" title="首次适应算法"></a>首次适应算法</h2><p><strong>算法思想</strong>: 每次都从低地址开始查找, 找到第一个能满足大小的空闲分区.</p>
+<p><strong>如何实现</strong>: <strong>空闲分区以地址递增的次序排列</strong>. 每次分配内存时顺序查找<strong>空闲分区链</strong>(或<strong>空闲分区表</strong>), 找到大小能满足要求的第一个空闲分区.</p>
+<h2 id="最佳适应算法"><a href="#最佳适应算法" class="headerlink" title="最佳适应算法"></a>最佳适应算法</h2><p><strong>算法思想</strong>: 由于动态分区分配是一种连续分配方式, 为各个进程分配的空间必须是连续的一整片区域. 因此为了保证当”大进程”到来时能有连续的大片空间, 考研尽可能多地留下大片的空闲区,即,优先使用更小的空闲区.</p>
+<p><strong>如何实现</strong>: 空闲分区<strong>按容量递增次序链接</strong>. 每次分配内存时顺序查找<strong>空闲分区链</strong>(或<strong>空闲分区表</strong>), 找到大小能满足要求的第一个空闲分区.</p>
+<p><strong>缺点</strong>: <strong>每次都选最小的分区进行分配, 会留下越来越多的, 很小的, 难以利用的内存块. 因此这种方法会产生很多的外部碎片</strong>.</p>
+<h2 id="最坏适应算法"><a href="#最坏适应算法" class="headerlink" title="最坏适应算法"></a>最坏适应算法</h2><p>又称<strong>最大适应算法</strong></p>
+<p><strong>算法思想</strong>: 为了解决最佳适应算法的问题–即留下太多难以利用的小碎片, 可以在每次分配时候优先使用最大的连续空闲区, 这样分配后剩余的空闲区就不会太小, 更方便使用.</p>
+<p><strong>如何实现</strong>: 空闲分区<strong>按容量递减次序链接</strong>. 每次分配内存时顺序查找<strong>空闲分区链</strong>(或<strong>空闲分区表</strong>), 找到大小能满足要求的第一个空闲分区.</p>
+<p><strong>缺点</strong>: 每次都选最大的分区进行分配,虽然可以让分配后留下的空闲区更大, 更可用, 但是这种方式会导致较大的连续空闲区被迅速用完. 如果之后有”大进程”到达, 就没有内存分区可用了.</p>
+<h2 id="邻近适应算法"><a href="#邻近适应算法" class="headerlink" title="邻近适应算法"></a>邻近适应算法</h2><p><strong>算法思想</strong>: 首次适应算法每次都从链头开始查找的. 这可能会导致低地址部分出现很多小的空闲发呢去, 而每次分配查找时, 都要经过这些分区, 因此也增加了查找的开销. 如果每次都从上次查找结束的位置开始检索, 就能解决上述问题.</p>
+<p><strong>如何实现</strong>: 空闲分区以地址递增的顺序排序(可排成一个循环链表). 每次分配内存时<strong>从上次查找结束的位置开始</strong>查找<strong>空闲分区链</strong>(或<strong>空闲分区表</strong>), 找到大小能满足要求的第一个空闲分区.</p>
+<p>首次适应算法每次都要从头查找, 每次都需要检索低地址的小分区. 但是这种规则也决定了当低地址部分有更小的分区可用满足需求时, 会更有可能用到低地址部分的小分区, 也会跟那个有可能把高地址部分的大分区保留下来(最佳适应算法的优点)</p>
+<p>邻近适应算法的规则可能会导致无论低地址, 高地址部分的空闲分区都有相同的概率被使用, 也就导致了高地址部分的大分区更可能被使用, 划分为小分区, 最后导致无大分区可用. (最大适应算法的缺点)</p>
+<p>综合来看, <strong>首次适应算法的效果反而更好</strong>.</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><img src="https://raw.githubusercontent.com/muCyaKuCya/image/main/20210714173208.jpg"></p>
 
     </div>
 
@@ -210,17 +221,20 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%80%83%E7%A0%94%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 操作系统-考研复习笔记</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/11/21/My-first-Artical/" rel="next" title="My first Artical">
-      My first Artical <i class="fa fa-chevron-right"></i>
+    <a href="/2021/07/14/%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/" rel="prev" title="连续分配管理方式">
+      <i class="fa fa-chevron-left"></i> 连续分配管理方式
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -279,7 +293,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">动态分区分配算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E6%AC%A1%E9%80%82%E5%BA%94%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">首次适应算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E4%BD%B3%E9%80%82%E5%BA%94%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">最佳适应算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E5%9D%8F%E9%80%82%E5%BA%94%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">最坏适应算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%BB%E8%BF%91%E9%80%82%E5%BA%94%E7%AE%97%E6%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text">邻近适应算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">1.5.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
